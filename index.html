@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Игра: угадай число</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="canvas">
+        <div class="desc">
+          <h1 class="desc_title">Игра: угадай число</h1>
+          <button class="desc_btn_changeAmplitude">
+            Сменить диапазон чисел
+          </button>
+          <p class="desc_currentAmplitude">Текущий диапазон: 1-100</p>
+          <button class="desc_btn_start">
+            Начать игру
+          </button>
+        </div>
+        <div class="main_block">
+        <div class="field">
+          <label for="" class="filed_form_label">Ваше число: </label>
+          <input type="text" class="field_form_input" />
+          <button class="field_form_btn">Проверить</button>
+        </div>
+        <div class="result">
+          <div class="result_check">
+            <span class="result_check_label">Результат:</span>
+            <span class="result_check_out"></span>
+          </div>
+          <div class="result_help">
+            <span class="result_help">Подсказка:</span>
+            <span class="result_help_out"></span>
+          </div>
+          <div class="result_count">
+            <span class="result_count_label">Число попыток:</span>
+            <span class="result_count_out"></span>
+          </div>
+          <button class="result_btn">
+            Круто! Хочу начать заново
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
